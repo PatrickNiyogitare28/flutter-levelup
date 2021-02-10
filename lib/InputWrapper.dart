@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'Button.dart';
+import 'InputField.dart';
 
-class InpuWrapper extends StatelessWidget {
+class InputWrapper extends StatelessWidget {
   @override
   Widget build( BuildContext context){
     return Padding(
@@ -16,9 +18,14 @@ class InpuWrapper extends StatelessWidget {
                child: InputField(),
              ),
              SizedBox(height: 40,),
-             Text("Forgot password?",style: TextStyle(color: Colors.grey),)
+             Text(
+                 "Forgot password?",
+                 style: TextStyle(color: Colors.grey),
+             ),
+             SizedBox(height: 40,),
+             Button()
            ],
          ),
-    )
+    );
   }
 }
